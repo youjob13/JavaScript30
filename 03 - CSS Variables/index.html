@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Css variables</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Welcome!</h1>
+
+      <div class="input">
+        <label for="letter-spacing">Letter Spacing</label>
+        <input
+          data-sizing="px"
+          name="letter-spacing"
+          type="range"
+          min="0"
+          max="20"
+          value="0"
+        />
+      </div>
+
+      <div class="input">
+        <label for="blur">Blur</label>
+        <input
+          data-sizing="px"
+          value="0"
+          type="range"
+          name="blur"
+          min="0"
+          max="10"
+        />
+      </div>
+
+      <div class="input">
+        <label for="color">Color</label>
+        <input value="#ffffff" name="color" type="color" />
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
