@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+main {
+  background-image: url("bg.gif");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.clock {
+  position: relative;
+  left: 750px;
+  top: 60px;
+  border: 12px solid #fff;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translateY(-3px);
+}
+
+
+.hand {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 6px;
+  background-color: #000;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
